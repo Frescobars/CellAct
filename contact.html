@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+      </style>
+    <link rel="stylesheet" href="contactdizajnimi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<img class="logo" src="350627858_1174329226857008_1924755731883825918_n-removebg-preview.png" alt="">
+ <div class="emri"> <h1>-Boxing Club-</h1>
+    </div>
+<body>
+    <div class="socialmedia">
+        <a href="#" class="fa fa-facebook"></a>
+  <a href="https://www.facebook.com/Jetofitt" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/cellactive.ks/" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="https://wa.link/29xo2e" class="fa fa-whatsapp"></a>
+  </div>
+    <ul class = "navbar"> 
+        <li><a class="home" href="struktura.html#home">Home</a></li>
+        <li><a class = "about" href="about.html">About</a></li>
+        <li><a class = "trainers" href="trainers.html">Trainers</a></li>
+        <li><a class = "classes" href="classes.html">Classes</a></li>
+      </ul>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+<script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const submitBtn = document.querySelector('form button');
+        
+        const validateForm = (event) => {
+          event.preventDefault();
+      
+          const nameInput = document.getElementById('name');
+          const emailInput = document.getElementById('email');
+          const messageInput = document.getElementById('message');
+      
+          if (nameInput.value === "") {
+            alert("Please enter your name.");
+            nameInput.focus();
+            return false;
+          }
+      
+          if (emailInput.value === "") {
+            alert("Please enter your email.");
+            emailInput.focus();
+            return false;
+          }
+      
+          if (!emailValid(emailInput.value)) {
+            alert("Please enter a valid email address.");
+            emailInput.focus();
+            return false;
+          }
+      
+          if (messageInput.value === "") {
+            alert("Please enter your message.");
+            messageInput.focus();
+            return false;
+          }
+          return true;
+        };
+      
+        const emailValid = (email) => {
+          const emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+          return emailRegex.test(email.toLowerCase());
+        };
+      
+        submitBtn.addEventListener('click', validateForm);
+      });
+    </script>
+<div class="Kontakti">
+    <p > PER ME SHUME NA KONTAKTONI: Numri Telefonit: +38343520030 Email: freskimceta@gmail.com ose permes rrjeteve sociale</p>
+ 
+</div>
+    <h1 class="Lokacionet">Lokacionet ku gjendemi ne</h1>
+    <h1 class="fk">FUSHE KOSOVE</h1>
+    <h1 class="tophane">TOPHANE</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.6583382550316!2d21.155317924056057!3d42.66859511518431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ff768351447%3A0xbf4da1522fb42b31!2sPr%20fight%20center-Cellactive%20Boxing%20Club!5e0!3m2!1sen!2s!4v1700837997986!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12021786.968881419!2d2.639465332031243!3d42.64002037386321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fde84adf9df%3A0xb4ad8802d47568fe!2sCell%20Active!5e0!3m2!1sen!2s!4v1700838808884!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+</body>
+</html>
